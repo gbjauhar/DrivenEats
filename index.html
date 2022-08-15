@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <html>
+        <head>
+            <meta charset="UTF-8" />
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="reset.css" />
+            <link rel="stylesheet" href="style.css" />
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        </head>
+    <body>
+        <div class="top">
+            <h1>DrivenEats</h1>
+            <h2>Sua comida em 6 minutos</h2>
+        </div>
+        <div class="corpo">
+            <div class="container-food">
+                <p>Primeiro, seu prato</p>
+                <div class="plates">
+                    <button class="raviolone option" onclick="selecionarPrato('raviolone')">
+                        <img src="https://cdn.accon.app/16468386199967875407794490108-1080p.jpg">
+                        <h1>Raviolone</h1>
+                        <h2>Queijo de castanhas e cogumelos</h2>
+                        <h3>R$ 76,00</h3>
+                    </button>
+                    <button class="escalope option" onclick="selecionarPrato('escalope')">
+                        <img src="https://cdn.accon.app/164684064699933705538268816393-1080p.jpg">
+                        <h1>Escalope</h1>
+                        <h2>Seitan e arroz à piamontese</h2>
+                        <h3>R$ 68,00</h3>
+                    </button>
+                    <button class="lamen option" onclick="selecionarPrato('lamen')">
+                        <img src="http://s2.glbimg.com/sBrQ7JxsIXS_hJFGsWfgvdSgx8w=/640x413/smart/e.glbimg.com/og/ed/f/original/2017/05/19/lamen-vegetariano-03.jpg">
+                        <h1>Lámen</h1>
+                        <h2>Com tofu e cogumelos shitake</h2>
+                        <h3>R$ 68,00</h3>
+                    </button>
+                    <button class="paella option" onclick="selecionarPrato('paella')">
+                        <img src="https://cdn.accon.app/16527988662644012431768413982-1080p.jpg">
+                        <h1>Paella de vegetais</h1>
+                        <h2>Arroz arbóreo e chorizo de seitan</h2>
+                        <h3>R$ 74,00</h3>
+                    </button>
+                </div>
+            </div>
+            <div class="container-drink">
+                <p>Agora, sua bebida</p>
+                <div class="drinks">
+                    <button class="limonada option" onclick="selecionarBebida('limonada')">
+                        <img src="https://cdn.accon.app/16363995147187206261277727284-1080p.jpg">
+                        <h1>Limonada</h1>
+                        <h2>Copo de 300ml</h2>
+                        <h3>R$ 16,00</h3>
+                    </button>
+                    <button class="reve option" onclick="selecionarBebida('reve')">
+                        <img src="https://cdn.accon.app/16363990952103887375548133485-1080p.jpg">
+                        <h1>Rève Rose</h1>
+                        <h2>Laranja, morango e suco de uva rose</h2>
+                        <h3>R$ 24,00</h3>
+                    </button>
+                    <button class="mate option" onclick="selecionarBebida('mate')">
+                        <img src="https://acconstorage.blob.core.windows.net/acconpictures/202007171956_TqQw_m.jpg">
+                        <h1>Mate da casa</h1>
+                        <h2>Copo de 300ml</h2>
+                        <h3>R$ 16,00</h3>
+                    </button>
+                    <button class="pink option" onclick="selecionarBebida('pink')">
+                        <img src="https://acconstorage.blob.core.windows.net/acconpictures/202007021413_8gFc_i.jpg">
+                        <h1>Pink Lemonade</h1>
+                        <h2>Mirtilo, cranberry e limão siciliano</h2>
+                        <h3>R$ 24,00</h3>
+                    </button>
+                </div>
+            </div>
+            <div class="container-dessert">
+                <p>Por fim, sua sobremesa</p>
+                <div class="desserts">
+                    <button class="banoffee option" onclick="selecionarSobremesa('banoffee')">
+                        <img src="https://cdn.accon.app/164407760347339875072764808905-1080p.jpg">
+                        <h1>Banoffee</h1>
+                        <h2>Massa de amêndoa com banana brûlée</h2>
+                        <h3>R$ 42,00</h3>
+                    </button>
+                    <button class="bolo option" onclick="selecionarSobremesa('bolo')">
+                        <img src="https://cdn.accon.app/16527990743448226878388802836-1080p.jpg">
+                        <h1>Bolo Toffee</h1>
+                        <h2>Bolo e sorvete de canela e tâmara</h2>
+                        <h3>R$ 40,00</h3>
+                    </button>
+                    <button class="crumble option" onclick="selecionarSobremesa('crumble')">
+                        <img src="https://tevavegetal.com.br/wp/wp-content/uploads/2022/07/teva-crumble-500x400.jpeg">
+                        <h1>Crumble de maçã</h1>
+                        <h2>Crumble e sorvete de baunilha</h2>
+                        <h3>R$ 40,00</h3>
+                    </button>
+                    <button class="sorvete option" onclick="selecionarSobremesa('sorvete')">
+                        <img src="https://tevavegetal.com.br/wp/wp-content/uploads/2022/05/teva-torta-pecan-500x400.jpeg">
+                        <h1>Sorvete</h1>
+                        <h2>Sorvete feito de baunilha ou canela</h2>
+                        <h3>R$ 26,00</h3>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <button class="graybutton" onclick="continuar()"> 
+                <p>Selecione os 3 itens <br>para fechar o pedido</br></p>
+            </button>
+            <button class="greenbutton hidden" onclick="continuar(); finalizar();"> 
+                <p>Fechar pedido</p>
+            </button>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
